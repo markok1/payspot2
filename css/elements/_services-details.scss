@@ -64,6 +64,7 @@
 }
 .ria-bg {
   background-image: url('../img/ria-bg2.png');
+  background-size: contain;
 }
 .service-uplata-pazara {
   background-image: url('../img/uplata-pazara-big.webp');
@@ -209,18 +210,20 @@
 }
 .ria-table table {
   font-family: arial, sans-serif;
-  border-collapse: collapse;
+  border-collapse: separate;
   width: 100%;
 }
 .ria-table td,
 .ria-table th {
-  border: 1px solid #e10000;
+  border: 0px solid #e10000;
+  background-color: #d7d7d7;
+  border-radius: 5px;
   text-align: left;
   padding: 8px 5px;
   text-align: center;
 }
 .ria-table th {
-  background-color: #b8b8b8;
+  background-color: #757575;
   color: #fff;
   width: 50%;
 }
