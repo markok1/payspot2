@@ -1,0 +1,8 @@
+
+RewriteEngine on
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP:X-Forwarded-SSL} !on
+RewriteCond %{HTTP_HOST} ^payspot\.me$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.payspot\.me$
+RewriteRule ^/?$ "https\:\/\/payspot\.me\/" [R=301,L]
+
