@@ -64,7 +64,7 @@
 }
 .ria-bg {
   background-image: url('../img/ria-bg2.png');
-  background-size: contain;
+  background-size: cover;
 }
 .service-uplata-pazara {
   background-image: url('../img/uplata-pazara-big.webp');
@@ -193,6 +193,9 @@
       width: calc(50% - 40px);
     }
   }
+  .arrow-right {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -245,4 +248,14 @@
 }
 .remove-absolute {
   position: relative !important;
+}
+
+.arrow-right {
+  max-width: 100px;
+  position: absolute;
+  top: 10%;
+  right: -70px;
+}
+.upustvo-content {
+  position: relative;
 }

@@ -58,6 +58,10 @@ a {
   transition: all ease 0.25s;
 }
 
+.text-justify {
+  text-align: justify;
+}
+
 .circle-list {
   list-style-type: circle; /* Uses circles as bullet points */
 }
@@ -66,6 +70,10 @@ a {
   list-style: none; /* Remove default bullets */
   padding: 0;
   margin: 0;
+  position: relative;
+}
+.list-checkmark li {
+  padding-left: 20px;
 }
 .list-checkmark li::before {
   content: "✔"; /* Unicode checkmark */
@@ -73,6 +81,8 @@ a {
   font-weight: bold;
   display: inline-block;
   width: 1.2em;
+  position: absolute;
+  left: 0px;
 }
 
 .list-number {
@@ -2565,7 +2575,7 @@ ul li a img {
 
 .ria-bg {
   background-image: url("../img/ria-bg2.png");
-  background-size: contain;
+  background-size: cover;
 }
 
 .service-uplata-pazara {
@@ -2690,6 +2700,9 @@ ul li a img {
   .images-holder .upustvo-content {
     width: calc(50% - 40px);
   }
+  .arrow-right {
+    display: none;
+  }
 }
 @media screen and (max-width: 500px) {
   .images-holder .upustvo-content {
@@ -2743,4 +2756,15 @@ ul li a img {
 
 .remove-absolute {
   position: relative !important;
+}
+
+.arrow-right {
+  max-width: 100px;
+  position: absolute;
+  top: 10%;
+  right: -70px;
+}
+
+.upustvo-content {
+  position: relative;
 }/*# sourceMappingURL=style.css.map */

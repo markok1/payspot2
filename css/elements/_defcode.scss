@@ -51,6 +51,9 @@ img {
 a {
   transition: all ease 0.25s;
 }
+.text-justify {
+  text-align: justify;
+}
 
 // def code end
 
@@ -62,12 +65,18 @@ a {
   list-style: none; /* Remove default bullets */
   padding: 0;
   margin: 0;
+  position: relative;
+  li {
+    padding-left: 20px;
+  }
   li::before {
     content: '✔'; /* Unicode checkmark */
     color: #e10000;
     font-weight: bold;
     display: inline-block;
     width: 1.2em;
+    position: absolute;
+    left: 0px;
   }
 }
 .list-number {
